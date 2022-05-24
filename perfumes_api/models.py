@@ -4,9 +4,9 @@ from django.db import models
 class Perfume(models.Model):
     perfume_name = models.CharField(max_length=255)
     purchaser = models.CharField(max_length=255)
-    perfume_price = models.IntegerField(max_length=155)
+    perfume_price = models.IntegerField(max_length=155,default=0)
     perfume_edition = models.CharField(max_length=255)
-    perfume_size = models.IntegerField(max_length=55)
+    perfume_size = models.IntegerField(max_length=55, default=0)
     perfume_description = models.TextField()
     date_created = models.DateTimeField(auto_now_add=True)
     date_updated = models.DateTimeField(auto_now=True)
