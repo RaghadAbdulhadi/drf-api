@@ -3,7 +3,7 @@ from perfumes_api.models import Perfume
 
 class PerfumeSerializer(serializers.ModelSerializer):
     class Meta:
-        fields = ('id', 'perfume_name', 'perfume_description')
+        fields = ('id', 'purchaser', 'perfume_name', 'perfume_description', 'perfume_price','perfume_price','perfume_edition', 'perfume_size',)
         model = Perfume
 
 # JSON

@@ -6,7 +6,10 @@ class PerfumeAPIList(generics.ListAPIView):
     queryset = Perfume.objects.all()
     serializer_class = PerfumeSerializer
 
-class PerfumeAPIRetrieve(generics.RetrieveAPIView):
+class PerfumeAPIRetrieve(generics.RetrieveUpdateDestroyAPIView):
     queryset = Perfume.objects.all()
     serializer_class = PerfumeSerializer
 
+class PerfumeAPICreate(generics.ListCreateAPIView):
+    queryset = Perfume.objects.all()
+    serializer_class = PerfumeSerializer
